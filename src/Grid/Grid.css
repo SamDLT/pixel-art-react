@@ -1,0 +1,26 @@
+.grid {
+  border: 1em solid grey;
+  display: inline-block;
+}
+
+.grid-cell {
+  background-color: grey;
+  height: 5em;
+  width: 5em;
+  display: inline-block;
+}
+
+.grid-row {
+  height: 5em;
+}
+
+.grid-cell:nth-child(2n+1) {
+  background-color: white;
+}
+.grid-row:nth-child(2n+0) > .grid-cell {
+  background-color: grey;
+}
+
+.grid-row:nth-child(2n+0) > .grid-cell:nth-child(2n+0) {
+  background-color: white;
+}
